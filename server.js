@@ -99,7 +99,7 @@ app.post('/register', (req, res) => {
       .then(trx.commit)
       .catch(trx.rollback)
   })
-  .catch(err => res.json('eeeh, u did something wrong'))
+  .catch(err => res.status(400).json('eeeh, u did something wrong'))
 })
 
 app.post('/signin', (req, res) => {
