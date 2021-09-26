@@ -127,6 +127,6 @@ app.post('/signin', (req, res) => {
     .catch(err => res.status(400).json('wrong credentials!'))
 })
 
-app.listen(3000, () => {
-  console.log('listenning to port 3000 ...')
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`listenning to port ${process.env.PORT} ...`)
 })
