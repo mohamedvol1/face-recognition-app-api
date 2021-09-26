@@ -7,10 +7,10 @@ import Clarifai from 'clarifai';
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    port: 5432,
+    host : 'postgresql-horizontal-67514',
+    // port: 5432,
     user : 'postgres',
-    password : '0001',
+    // password : '0001',
     database : 'smart_brain'
   }
 })
